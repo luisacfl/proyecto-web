@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro</title>
+<style>
+* {box-sizing: border-box}
+
+.container {
+  padding: 16px;
+}
+label{
+  display: block;
+  text-align: center;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  
+}
+
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+a {
+  color: dodgerblue;
+}
+.TYC{
+  padding-top: 5px;
+}
+.RedesSociales{
+  padding: 3px;
+  text-align: center;
+}
+
+.signin,.register , .TYC, {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+
+        <form action="">
+                <div class="container-fluid">
+                    <div class="container register">
+                  <h1>Registro</h1>
+                  <p>Llena los siguientes datos para poder crear una cuenta.</p>
+                  </div>
+                  <hr>
+
+                  <label for="Name"><b>Nombre</b></label>
+                  <input type="text" placeholder="Nombre" name="name" required>
+                  <br>
+                  <br>
+
+                  <label for="LName"><b>Apellido</b></label>
+                  <input type="text" placeholder="Apellido materno" name="Apellido" required>
+                  <br>
+                  <br>
+              
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Ingresa Email" name="email" required>
+                  <br>
+                  <br>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Ingresa tu Password" name="psw" required>
+                  <br>
+                  <br>
+              
+                  <label for="psw-repeat"><b>Repeat Password</b></label>
+                  <input type="password" placeholder="Ingresa tu Password" name="psw-repeat" required>
+                  <div class="RedesSociales">
+                  <label for="select"> <b>¿Como nos encontro?</b></label>
+                  <select id="select">
+                  <option value="">  Como nos encontro...</option>
+                    <option value="">Facebook</option>
+                    <option value="">Twitter</option>
+                    <option value="">Intragram</option>
+                    <option value="">Un amigo</option>
+                </select>
+              </div>
+                  <hr>
+                <div class="TYC">
+                  <p>Al crear esta cuenta usted acepta nuestros <a href="#T">Terminos y condiciniones</a>.</p>
+                  <button type="submit" class="registerbtn">Registrar</button>
+                </div>
+                
+                </div>
+              
+                <div class="container signin">
+                  <p>Ya tiene una cuenta con nosotros? <a href="#">Ingrese</a>.</p>
+                </div>
+              </form>
+</body>
+</html>
